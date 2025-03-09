@@ -6,7 +6,7 @@ import '../views/home_screen.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();
-  String emailse= "";
+  String loginEmail= "";
 
   FirebaseAuth auth = FirebaseAuth.instance;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
@@ -45,11 +45,11 @@ class AuthController extends GetxController {
           .collection('users')
           .doc(auth.currentUser!.uid)
           .update({'status': 'Online'});
-      emailse = email;
+      loginEmail = email;
       Get.offAll(() => HomeScreen());
     } catch (e) {
-      Get.snackbar("Login Failed", e.toString());
-      print("hhhhhhhhhhhhhhh"+e.toString());
+      Get.snackbar("Login Failed", e.toString(),);
+
     }
   }
 

@@ -3,10 +3,23 @@
 A new Flutter project.
 
 ## Getting Started
+1 User Registration & Login
 
-This project is a starting point for a Flutter application.
+    Users Sign up with Email & Password.
+    Firebase Authentication stores user credentials.
+    After login, users are redirected to Home Screen.
+️Fetching Users & Online Status
 
-A few resources to get you started if this is your first Flutter project:
+    All registered users are fetched from Firestore.
+    Online/Offline status updates dynamically:
+        Online when user logs in.
+        Offline when user logs out or closes the app.
+
+One-on-One Chat
+
+    Clicking a user opens a chat window.
+    Messages are stored in Firestore in a chats collection.
+    Firestore Snapshots keep updating messages in real-time.
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)

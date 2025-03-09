@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
           return ListView(
             padding: const EdgeInsets.all(10),
             children: snapshot.data!.docs.map((user) {
-              bool isCurrentUser = user['email'] == authController.emailse;
+              bool isCurrentUser = user['email'] == authController.loginEmail;
 
               return Container(
                 margin: const EdgeInsets.symmetric(vertical: 6),

@@ -140,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         "Don't have an account? ",
                         style: TextStyle(
                           fontSize: 16,
-                          color: Color(0xFFfb8500),
+                          color: Color(0xFF023047),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
